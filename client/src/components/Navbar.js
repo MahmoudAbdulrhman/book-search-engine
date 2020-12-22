@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Modal, Tab } from 'react-bootstrap';
+
 import SignUpForm from './SignupForm';
 import LoginForm from './LoginForm';
 
@@ -32,8 +33,8 @@ const AppNavbar = () => {
                   <Nav.Link onClick={Auth.logout}>Logout</Nav.Link>
                 </>
               ) : (
-                <Nav.Link onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link>
-              )}
+                  <Nav.Link onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link>
+                )}
             </Nav>
           </Navbar.Collapse>
         </Container>
